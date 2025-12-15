@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Sagar Singh</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="logo">SS</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="projects-page">
+    <h1>Projects</h1>
+    <p class="section-desc">
+      A collection of projects showcasing my skills in data science,
+      machine learning, analytics, and business intelligence.
+    </p>
+
+    <!-- ===== Filters ===== -->
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ml">Machine Learning</button>
+      <button class="filter-btn" data-filter="bi">BI / Analytics</button>
+      <button class="filter-btn" data-filter="dashboards">Dashboards</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card" data-category="ml">
+        <div class="project-image">
+          <img src="assets/projects/chatbot.png" alt="Conversational AI Chatbot">
+          <div class="image-overlay">
+            <button class="open-modal">View Details</button>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <h3>Conversational AI Chatbot</h3>
+
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>LangChain</span>
+            <span>OpenAI</span>
+            <span>RAG</span>
+          </div>
+
+          <p>
+            Built a domain-specific chatbot using retrieval-augmented generation,
+            achieving 85% answer accuracy with low-latency inference.
+          </p>
+
+          <div class="project-links">
+            <a href="#" class="btn">Code</a>
+            <a href="#" class="btn outline">Live</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card" data-category="ml">
+        <div class="project-image">
+          <img src="assets/projects/object-detection.png" alt="Real-Time Object Detection">
+          <div class="image-overlay">
+            <button class="open-modal">View Details</button>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <h3>Real-Time Object Detection System</h3>
+
+          <div class="tech-stack">
+            <span>YOLOv8</span>
+            <span>TensorFlow</span>
+            <span>MLflow</span>
+          </div>
+
+          <p>
+            Developed a real-time object detection pipeline achieving 89% mAP
+            and optimized inference to 30 FPS using TensorRT.
+          </p>
+
+          <div class="project-links">
+            <a href="#" class="btn">Code</a>
+            <a href="#" class="btn outline">Live</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card" data-category="ml">
+        <div class="project-image">
+          <img src="assets/projects/testbench.png" alt="Test Bench Optimization">
+          <div class="image-overlay">
+            <button class="open-modal">View Details</button>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <h3>Test Bench Time Optimization</h3>
+
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>XGBoost</span>
+            <span>TensorFlow</span>
+          </div>
+
+          <p>
+            Reduced vehicle test duration by 12–15% using ensemble ML models
+            and automated MLOps workflows.
+          </p>
+
+          <div class="project-links">
+            <a href="#" class="btn">Code</a>
+            <a href="#" class="btn outline">Live</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card" data-category="dashboards">
+        <div class="project-image">
+          <img src="assets/projects/uber-dashboard.png" alt="Uber Analytics Dashboard">
+          <div class="image-overlay">
+            <button class="open-modal">View Details</button>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <h3>Uber Rides Analytics Dashboard</h3>
+
+          <div class="tech-stack">
+            <span>Tableau</span>
+            <span>SQL</span>
+            <span>Excel</span>
+          </div>
+
+          <p>
+            Designed an interactive Tableau dashboard analyzing 50K+ Uber rides,
+            improving reporting efficiency by 40%.
+          </p>
+
+          <div class="project-links">
+            <a href="#" class="btn">Dashboard</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= MODAL ================= -->
+  <div class="project-modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <div class="modal-tech" id="modalTech"></div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Sagar Singh</h3>
+      <p class="footer-tagline">
+        Building data-driven solutions with analytics & machine learning
+      </p>
+      <div class="footer-links">
+        <a href="mailto:sagarghanghas077@gmail.com">Email</a>
+        <span>•</span>
+        <a href="#" target="_blank">LinkedIn</a>
+        <span>•</span>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+      <p class="footer-copy">
+        © 2025 Sagar Singh. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

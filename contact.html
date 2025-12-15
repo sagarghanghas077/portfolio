@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sagar Singh</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- EmailJS SDK -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+  </script>
+  <script>
+    (function () {
+      emailjs.init("YOUR_PUBLIC_KEY"); 
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="logo">SS</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact-page">
+    <h1>Let’s Connect</h1>
+    <p class="contact-intro">
+      Have an opportunity, project, or just want to say hi?  
+      Feel free to reach out — I’m always open to discussing data, analytics,
+      and exciting ideas.
+    </p>
+
+    <div class="contact-wrapper">
+
+      <!-- CONTACT FORM -->
+      <form id="contactForm" class="contact-form">
+
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" name="from_name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" name="reply_to" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+
+        <!-- STATUS MESSAGE -->
+        <p id="formStatus" class="form-status"></p>
+      </form>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <h3>Contact Details</h3>
+
+        <p>
+          <strong>Email:</strong><br>
+          <a href="mailto:sagarghanghas077@gmail.com">
+            sagarghanghas077@gmail.com
+          </a>
+        </p>
+
+        <p><strong>Profiles:</strong></p>
+        <div class="contact-links">
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Sagar Singh</h3>
+      <p class="footer-tagline">
+        Building data-driven solutions with analytics & machine learning
+      </p>
+      <div class="footer-links">
+        <a href="mailto:sagarghanghas077@gmail.com">Email</a>
+        <span>•</span>
+        <a href="#" target="_blank">LinkedIn</a>
+        <span>•</span>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+      <p class="footer-copy">
+        © 2025 Sagar Singh. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- MAIN JS -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
